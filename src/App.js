@@ -1,6 +1,8 @@
 import React from 'react';
 import './App.css';
-import DataFetching from './Components/DataFetching';
+import 'bulma/css/bulma.css'
+
+
 
 
 
@@ -9,27 +11,41 @@ import DataFetching from './Components/DataFetching';
 
 
 function App() {
+  const name = "Advertisment";
+
+
 
 
   return (
     <div className="App">
-      <header className="header">Advertisment</header>
-      <div>
-        
-        <article>
-          <p>
-            Welcome and find what ever you want.
-          </p>
-        </article>
+      <header className="App-header">
+        <h1>{name}</h1>
+      </header>
+      <div className="columns">
+        <div className="column">
+          Advertisment
+  </div>
+        <div className="column">
+          New Ad
+  </div>
+        <div className="column">
+          Log In
+  </div>
+        <div className="column">
+        Register
+  </div>
+      <section className="hero is-fullheight">
+  <div className="hero-body">
+    <div className="container">
       </div>
       
-      <DataFetching />
-
-
+  </div>
+</section>
       
-
-
-
+      
+      
+      
+    </div>
     </div>
   );
 }
