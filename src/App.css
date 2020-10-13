@@ -1,6 +1,16 @@
 .App {
   text-align: center;
+  padding: 50px;
+  margin: auto;
+  
 }
+.header {
+  font-size: 40px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: solid;
+}
+
 
 .App-logo {
   height: 40vmin;
@@ -35,4 +45,6 @@
   to {
     transform: rotate(360deg);
   }
+  
 }
+

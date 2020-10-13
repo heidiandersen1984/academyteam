@@ -1,19 +1,36 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import './App.css';
-import Article from './Components/Ads';
-import Ads from './Components/Ads';
+import DataFetching from './Components/DataFetching';
 
 
 
-  
+
+
+
 
 function App() {
-  
+
+
   return (
     <div className="App">
-      <Article/>
-  
+      <header className="header">Advertisment</header>
+      <div>
+        
+        <article>
+          <p>
+            Welcome and find what ever you want.
+          </p>
+        </article>
       </div>
+      
+      <DataFetching />
+
+
+      
+
+
+
+    </div>
   );
 }
 
