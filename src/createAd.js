@@ -7,6 +7,15 @@ function CreateAd() {
         e.preventDefault();
         console.log("Let's go and save that new ad!!!!");
 
+        let titleIdVar = document.getElementById("titleId").value
+        let descriptionIdVar = document.getElementById("descriptionId").value
+        let nameIdVar = document.getElementById("nameId").value
+        let locationIdVar = document.getElementById("locationId").value
+        let numberIdVar = document.getElementById("numberId").valueAsNumber
+        let booleanIdVar = document.getElementById("booleanId").checked
+        let emailIdVar = document.getElementById("emailId").value
+
+/*
         let inputArray = [
             titleId,
             descriptionId,
@@ -14,18 +23,18 @@ function CreateAd() {
             locationId,
             numberId,
             booleanId,
-            emailId,
-
-            
-        ]
-
+            emailId
+        ];
+*/
         const url = 'https://awacademy-classifieds.herokuapp.com/ad';
         const data = {
-            title: 'Hello World',
-            description: 'Foo bar baz',
-            name: 'Philip',
-            location: 'At home',
-            email: 'spam@nowhere.example',
+            title: titleIdVar,
+            description: descriptionIdVar,
+            name: nameIdVar,
+            location: locationIdVar,
+            price: numberIdVar,
+            priceNegotiable: booleanIdVar,
+            email: emailIdVar,
         };
             
         const loadPromise = fetch(url, {
@@ -47,31 +56,31 @@ function CreateAd() {
         <h1>Create Ad</h1>
         <form onSubmit={submit}>
             <label>
-                Title: <input type="text" id={titleId} />
+                Title: <input type="text" id="titleId" required/>
             </label>
             <br></br>
             <label>
-            Description: <input type="text" id={descriptionId} />
-            </label> 
-            <br></br>
-            <label>
-            Name: <input type="text" id={nameId}/>
+            Description: <input type="text" id="descriptionId" />
             </label>
             <br></br>
             <label>
-            Location: <input type="text" id={loacationId} />
+            Name: <input type="text" id="nameId" required/>
             </label>
             <br></br>
             <label>
-            Price: <input type={Number} id={numberId} />
+            Location: <input type="text" id="locationId" required/>
             </label>
             <br></br>
             <label>
-            Negotiable: <input type={Boolean} id={booleanId} />
+            Price: <input type="number" id="numberId" required/>
             </label>
             <br></br>
             <label>
-            E-mail: <input type="text" id={emailId} />
+            Negotiable: <input type="checkbox" id="booleanId" />
+            </label>
+            <br></br>
+            <label>
+            E-mail: <input type="text" id="emailId" />
             </label>
             <br></br>
             <button type="submit">Let's go already!!!</button>
