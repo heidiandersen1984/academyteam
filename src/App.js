@@ -4,12 +4,6 @@ import 'bulma/css/bulma.css'
 
 
 
-
-
-
-
-
-
 function App() {
   const name = "Advertisment";
 
@@ -22,16 +16,19 @@ function App() {
         <h1>{name}</h1>
       </header>
       <div className="columns">
-        <div className="column">
+        <div className="column button">
+          
           Advertisment
+          
   </div>
-        <div className="column">
+  
+        <div className="column button">
           New Ad
   </div>
-        <div className="column">
+        <div className="column button">
           Log In
   </div>
-        <div className="column">
+        <div className="column button">
         Register
   </div>
       <section className="hero is-fullheight">
