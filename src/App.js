@@ -1,6 +1,8 @@
 import React from 'react';
 import './App.css';
 import 'bulma/css/bulma.css'
+import AdList from './Adlist2'
+import CreateAd from './createAd'
 
 
 
@@ -15,6 +17,8 @@ function App() {
       <header className="App-header">
         <h1>{name}</h1>
       </header>
+      <CreateAd></CreateAd>
+      <br></br>
       <div className="columns">
         <div className="column button">
           
@@ -36,9 +40,10 @@ function App() {
     <div className="container">
       </div>
       
+      
   </div>
 </section>
-      
+
       
       
       

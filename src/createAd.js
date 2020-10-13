@@ -7,6 +7,18 @@ function CreateAd() {
         e.preventDefault();
         console.log("Let's go and save that new ad!!!!");
 
+        let inputArray = [
+            titleId,
+            descriptionId,
+            nameId,
+            locationId,
+            numberId,
+            booleanId,
+            emailId,
+
+            
+        ]
+
         const url = 'https://awacademy-classifieds.herokuapp.com/ad';
         const data = {
             title: 'Hello World',
@@ -35,8 +47,33 @@ function CreateAd() {
         <h1>Create Ad</h1>
         <form onSubmit={submit}>
             <label>
-                Title: <input type="text" />
+                Title: <input type="text" id={titleId} />
             </label>
+            <br></br>
+            <label>
+            Description: <input type="text" id={descriptionId} />
+            </label> 
+            <br></br>
+            <label>
+            Name: <input type="text" id={nameId}/>
+            </label>
+            <br></br>
+            <label>
+            Location: <input type="text" id={loacationId} />
+            </label>
+            <br></br>
+            <label>
+            Price: <input type={Number} id={numberId} />
+            </label>
+            <br></br>
+            <label>
+            Negotiable: <input type={Boolean} id={booleanId} />
+            </label>
+            <br></br>
+            <label>
+            E-mail: <input type="text" id={emailId} />
+            </label>
+            <br></br>
             <button type="submit">Let's go already!!!</button>
         </form>
     </div>
