@@ -17,7 +17,8 @@ function App() {
       <header className="App-header">
         <h1>{name}</h1>
       </header>
-      <CreateAd></CreateAd>
+  {/*<CreateAd></CreateAd>*/}
+      
       <br></br>
       <div className="columns">
         <div className="column button">
@@ -35,19 +36,12 @@ function App() {
         <div className="column button">
         Register
   </div>
-      <section className="hero is-fullheight">
-  <div className="hero-body">
-    <div className="container">
-      </div>
+     
       
-      
-  </div>
-</section>
 
       
-      
-      
     </div>
+    <AdList/>
     </div>
   );
 }
