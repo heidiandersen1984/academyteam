@@ -14,6 +14,8 @@ function CreateAd() {
         let numberIdVar = document.getElementById("numberId").valueAsNumber
         let booleanIdVar = document.getElementById("booleanId").checked
         let emailIdVar = document.getElementById("emailId").value
+        let phoneIdVar = document.getElementById("phoneId").valueAsNumber
+
 
 /*
         let inputArray = [
@@ -35,6 +37,7 @@ function CreateAd() {
             price: numberIdVar,
             priceNegotiable: booleanIdVar,
             email: emailIdVar,
+            phone: phoneIdVar,
         };
             
         const loadPromise = fetch(url, {
@@ -60,7 +63,7 @@ function CreateAd() {
             </label>
             <br></br>
             <label>
-            Description: <input type="text" id="descriptionId" />
+            Description: <input type="text" id="descriptionId"  />
             </label>
             <br></br>
             <label>
@@ -83,6 +86,9 @@ function CreateAd() {
             E-mail: <input type="text" id="emailId" />
             </label>
             <br></br>
+            <label>
+            Phone: <input type="number" id="phoneId" />
+            </label>
             <button type="submit">Let's go already!!!</button>
         </form>
     </div>
